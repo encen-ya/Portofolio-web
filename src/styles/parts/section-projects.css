@@ -1,0 +1,119 @@
+@layer sections {
+#projects {
+  position: relative;
+  padding: calc(var(--space-2) * 0.7) var(--space-1) var(--space-2);
+  background: var(--color-1);
+  color: var(--color-2);
+}
+
+#projects .projects__stage {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#projects .projects__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px 40px;
+  margin-bottom: clamp(40px, 7vh, 88px);
+}
+
+#projects .projects__lead {
+  max-width: 28rem;
+  color: var(--color-5);
+}
+
+#projects .projects__body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+#projects .projects__frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-1);
+  background: #13111b;
+  aspect-ratio: 16 / 10;
+  border: 1px solid color-mix(in srgb, var(--color-2) 12%, transparent);
+  box-shadow: 0 24px 60px color-mix(in srgb, var(--color-1) 85%, transparent);
+}
+
+#projects .projects__shot {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #0f0d16;
+}
+
+#projects .projects__shot:first-child {
+  z-index: 1;
+}
+
+#projects .projects__list {
+  display: grid;
+  gap: clamp(40px, 8vh, 80px);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#projects .story {
+  display: grid;
+  gap: 14px;
+  max-width: 38rem;
+  padding: 28px 0;
+  border-top: 1px solid color-mix(in srgb, var(--color-2) 10%, transparent);
+  transition: opacity 0.3s ease;
+}
+
+#projects .story__meta {
+  color: var(--color-5);
+  font-family: var(--font-2);
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+#projects .story__meta span {
+  color: var(--color-3);
+  font-weight: 700;
+}
+
+#projects .story__title {
+  font-family: var(--font-1);
+  font-size: clamp(26px, 2.8vw, 42px);
+  font-weight: 800;
+  color: var(--color-2);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin: 0;
+}
+
+#projects .story__text {
+  color: var(--color-5);
+  font-family: var(--font-2);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (min-width: 900px) {
+  #projects .projects__body {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+    gap: 6vw;
+  }
+  #projects .projects__frame {
+    aspect-ratio: 16 / 10.5;
+  }
+  #projects .projects__list {
+    gap: clamp(64px, 16vh, 160px);
+    padding-block: 4svh 12svh;
+  }
+}
+}

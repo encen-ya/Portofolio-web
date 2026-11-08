@@ -464,9 +464,11 @@ export function initSiteMotion() {
   /* ---------- scenes ---------- */
   window.motionKit.scene("work", () => {
     const work = document.getElementById("work");
+    if (!work) return;
     const stage = work.querySelector(".work__stage");
     const frame = work.querySelector(".work__window");
     const track = work.querySelector(".work__track");
+    if (!stage || !frame || !track) return;
     const left = (element) => {
       let x = 0;
       for (let node = element; node; node = node.offsetParent) x += node.offsetLeft;

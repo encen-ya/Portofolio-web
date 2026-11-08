@@ -2,12 +2,11 @@
   "brand": "KV",
   "links": [
     { "label": "About", "href": "#about" },
-    { "label": "Projects", "href": "#work" },
+    { "label": "Projects", "href": "#projects" },
     { "label": "Stack", "href": "#again" },
-    { "label": "Skills", "href": "#capabilities" },
-    { "label": "Blog", "href": "#journal" }
+    { "label": "Experience", "href": "#experience" }
   ],
-  "contactLink": { "label": "Contact", "href": "mailto:echenwijono@gmail.com" },
+  "contactLink": { "label": "Contact", "href": "#footer" },
   "menuLabel": "Menu",
   "menuNote": "echenwijono@gmail.com · Malang, Indonesia"
 }

@@ -3,7 +3,7 @@
   "lead": "Technologies and tools I work with daily across mobile, web, backend, and database architecture.",
   "categories": [
     {
-      "name": "Bahasa Pemrograman",
+      "name": "Programming Languages",
       "items": [
         { "name": "Dart", "desc": "Mobile & multiplatform", "primary": true, "icon": "dart" },
         { "name": "JavaScript", "desc": "Interactive web & DOM logic", "primary": true, "icon": "javascript" },
@@ -13,7 +13,7 @@
       ]
     },
     {
-      "name": "Framework & Library",
+      "name": "Frameworks & Libraries",
       "items": [
         { "name": "Flutter", "desc": "Cross-platform mobile UI", "primary": true, "icon": "flutter" },
         { "name": "Laravel", "desc": "Full-stack PHP framework", "primary": true, "icon": "laravel" },
@@ -23,14 +23,14 @@
       ]
     },
     {
-      "name": "Database",
+      "name": "Databases",
       "items": [
         { "name": "MySQL", "desc": "Relational database SQL", "primary": true, "icon": "mysql" },
         { "name": "PostgreSQL", "desc": "Advanced open-source SQL", "primary": true, "icon": "postgresql" }
       ]
     },
     {
-      "name": "DEV TOOLS & Environment",
+      "name": "Dev Tools & Environment",
       "items": [
         { "name": "Git & GitHub", "desc": "Version control & collab", "primary": true, "icon": "github" },
         { "name": "VS Code", "desc": "Primary code editor", "primary": true, "icon": "vscode" },

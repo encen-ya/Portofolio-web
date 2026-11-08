@@ -8,17 +8,14 @@
 @import "./parts/section-navigation.css";
 @import "./parts/section-hero.css";
 @import "./parts/section-about.css";
-@import "./parts/section-work.css";
+@import "./parts/section-projects.css";
 @import "./parts/section-again.css";
-@import "./parts/section-capabilities.css";
-@import "./parts/section-journal.css";
+@import "./parts/section-experience.css";
 @import "./parts/section-footer.css";
 
 @import "./parts/motion.css";
 
 @import "./parts/scene-hero.css";
-@import "./parts/scene-work.css";
+@import "./parts/scene-projects.css";
 @import "./parts/scene-again.css";
-@import "./parts/scene-capabilities.css";
-@import "./parts/scene-journal.css";
 @import "./parts/scene-footer.css";

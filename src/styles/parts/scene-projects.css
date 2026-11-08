@@ -1,0 +1,22 @@
+@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  [data-8b-live] #projects .projects__frame { position: sticky; z-index: 1; top: 80px; }
+  [data-8b-live] #projects .projects__shot:first-child { z-index: auto; }
+  @media (min-width: 900px) { [data-8b-live] #projects .projects__frame { top: calc(50svh - min(26svh, 20vw)); max-height: 60svh; } }
+}
+}
+@layer scenes {
+[data-8b-live] #projects { timeline-scope: --projects-t2, --projects-t3, --projects-t4; }
+[data-8b-live] #projects .projects__list > .story { view-timeline-inset: 0; animation-name: projects-li-story-opacity; animation-timeline: --projects-item; animation-range: cover 16vh cover 43.2vh; animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #projects .projects__list > li:first-of-type { animation-range: cover 16vh cover 50vh; }
+[data-8b-live] #projects .projects__list > li:nth-of-type(1) { view-timeline: --projects-item block; }
+[data-8b-live] #projects .projects__list > li:nth-of-type(2) { view-timeline: --projects-item block, --projects-t2 block; }
+[data-8b-live] #projects .projects__list > li:nth-of-type(3) { view-timeline: --projects-item block, --projects-t3 block; }
+[data-8b-live] #projects .projects__list > li:nth-of-type(4) { view-timeline: --projects-item block, --projects-t4 block; }
+[data-8b-live] #projects .projects__frame > img:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4)) { animation-name: projects-img-projects-shot-clippath; animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); }
+[data-8b-live] #projects .projects__frame > img:nth-of-type(2) { animation-timeline: --projects-t2; animation-range: cover 16vh cover 50vh; animation-fill-mode: both; }
+[data-8b-live] #projects .projects__frame > img:nth-of-type(3) { animation-timeline: --projects-t3; animation-range: cover 16vh cover 50vh; animation-fill-mode: both; }
+[data-8b-live] #projects .projects__frame > img:nth-of-type(4) { animation-timeline: --projects-t4; animation-range: cover 16vh cover 50vh; animation-fill-mode: both; }
+@keyframes projects-li-story-opacity { 0% { opacity: 0.35; } 100% { opacity: 1; } }
+@keyframes projects-img-projects-shot-clippath { 0% { clip-path: circle(0% at 50% 50%); } 100% { clip-path: circle(75% at 50% 50%); } }
+}

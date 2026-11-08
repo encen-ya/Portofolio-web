@@ -1,5 +1,5 @@
 {
-  "word": "HUBUNGI",
+  "word": "CONTACT",
   "columns": {
     "explore": "Explore",
     "talk": "Talk",
@@ -7,10 +7,9 @@
   },
   "explore": [
     { "label": "About", "href": "#about" },
-    { "label": "Projects", "href": "#work" },
+    { "label": "Projects", "href": "#projects" },
     { "label": "Stack", "href": "#again" },
-    { "label": "Skills", "href": "#capabilities" },
-    { "label": "Blog", "href": "#journal" }
+    { "label": "Experience", "href": "#experience" }
   ],
   "talk": [
     { "label": "echenwijono@gmail.com", "href": "mailto:echenwijono@gmail.com" },

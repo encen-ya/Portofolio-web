@@ -1,0 +1,20 @@
+{
+  "title": "Experience",
+  "lead": "Hands-on industry internship and organizational leadership roles that sharpened my technical and communication skills.",
+  "items": [
+    {
+      "number": "01",
+      "category": "INTERNSHIP · PT TELKOM INDONESIA (WITEL BLITAR)",
+      "role": "Technical Support Intern",
+      "period": "2024",
+      "description": "Provided on-site technical support and network infrastructure maintenance, assisted in troubleshooting customer connectivity, hardware issues, and telecom devices across enterprise and retail environments."
+    },
+    {
+      "number": "02",
+      "category": "ORGANISATION · KMK POLITEKNIK NEGERI MALANG",
+      "role": "Public Relations Division (Humas)",
+      "period": "2024 — Present",
+      "description": "Managed internal and external communication strategies, coordinated campus event announcements and social media publications, and bridged relationships between members and university student organizations."
+    }
+  ]
+}

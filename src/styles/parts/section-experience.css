@@ -1,0 +1,142 @@
+@layer sections {
+#experience {
+  position: relative;
+  padding: calc(var(--space-2) * 0.75) var(--space-1) var(--space-2);
+  background: var(--color-1);
+  color: var(--color-2);
+}
+
+#experience .experience__stage {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#experience .experience__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px 40px;
+  margin-bottom: clamp(48px, 8vh, 80px);
+}
+
+#experience .experience__lead {
+  max-width: 29rem;
+  color: var(--color-5);
+}
+
+#experience .experience__list {
+  display: flex;
+  flex-direction: column;
+}
+
+#experience .experience__row {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 20px 32px;
+  padding: clamp(32px, 4.5vh, 48px) 0;
+  border-top: 1px solid color-mix(in srgb, var(--color-2) 10%, transparent);
+  transition: padding 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              background 0.3s ease,
+              border-color 0.3s ease;
+}
+
+#experience .experience__row:last-child {
+  border-bottom: 1px solid color-mix(in srgb, var(--color-2) 10%, transparent);
+}
+
+@media (hover: hover) {
+  #experience .experience__row:hover {
+    background: color-mix(in srgb, var(--color-2) 2.5%, transparent);
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 12px;
+  }
+}
+
+#experience .experience__num {
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-6);
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+@media (hover: hover) {
+  #experience .experience__row:hover .experience__num {
+    color: var(--color-3);
+  }
+}
+
+#experience .experience__content {
+  display: flex;
+  flex-direction: column;
+}
+
+#experience .experience__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-bottom: 8px;
+}
+
+#experience .experience__cat {
+  font-family: var(--font-2);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-5);
+}
+
+#experience .experience__period {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-2);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-5);
+}
+
+#experience .experience__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-3);
+  box-shadow: 0 0 6px var(--color-3);
+  flex-shrink: 0;
+}
+
+#experience .experience__role {
+  font-family: var(--font-1);
+  font-size: clamp(30px, 4.2vw, 56px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--color-2);
+  line-height: 1.05;
+  margin: 4px 0 0;
+  transition: color 0.3s ease;
+}
+
+@media (hover: hover) {
+  #experience .experience__row:hover .experience__role {
+    color: #ffffff;
+  }
+}
+
+#experience .experience__desc {
+  font-family: var(--font-2);
+  font-size: 16px;
+  color: var(--color-5);
+  line-height: 1.6;
+  max-width: 48rem;
+  margin: 14px 0 0;
+}
+}

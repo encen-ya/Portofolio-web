@@ -1,11 +1,10 @@
 import About from "./components/About";
+import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import Journal from "./components/Journal";
 import Navigation from "./components/Navigation";
-import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 import Stack from "./components/Stack";
-import Work from "./components/Work";
 import useSiteMotion from "./hooks/useSiteMotion";
 
 export default function App() {
@@ -20,10 +19,9 @@ export default function App() {
       <main id="main">
         <Hero />
         <About />
-        <Work />
+        <Projects />
         <Stack />
-        <Skills />
-        <Journal />
+        <Experience />
       </main>
       <Footer />
     </>
