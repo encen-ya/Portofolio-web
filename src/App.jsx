@@ -2,6 +2,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import MusicPlayer from "./components/MusicPlayer";
 import Navigation from "./components/Navigation";
 import Projects from "./components/Projects";
 import Stack from "./components/Stack";
@@ -24,6 +25,7 @@ export default function App() {
         <Experience />
       </main>
       <Footer />
+      <MusicPlayer />
     </>
   );
 }

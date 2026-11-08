@@ -20,3 +20,4 @@
 @keyframes projects-li-story-opacity { 0% { opacity: 0.35; } 100% { opacity: 1; } }
 @keyframes projects-img-projects-shot-clippath { 0% { clip-path: circle(0% at 50% 50%); } 100% { clip-path: circle(75% at 50% 50%); } }
 }
+
