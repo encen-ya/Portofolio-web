@@ -504,9 +504,11 @@ export function initSiteMotion() {
 
   window.motionKit.scene("again", () => {
     const again = document.getElementById("again");
+    if (!again) return;
     const stage = again.querySelector(".again__stage");
     const head = again.querySelector(".again__head");
     const wheel = again.querySelector(".again__wheel");
+    if (!stage || !head || !wheel) return;
 
     window.motionKit.measure(() => {
       const count = wheel.querySelectorAll(".partner").length;

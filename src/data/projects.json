@@ -25,14 +25,14 @@
       }
     },
     {
-      "name": "kreszen.my.id",
+      "name": "Web Portofolio",
       "tag": "Portfolio, Web",
       "description": "My personal portfolio site, built to document my projects, GitHub repos, and dev journey.",
       "image": {
-        "src": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1140&h=713&q=60",
-        "alt": "A developer writing code on a laptop",
-        "width": 1140,
-        "height": 713
+        "src": "/images/project-web-portofolio.png",
+        "alt": "Hero section of the Kreszen personal portfolio website",
+        "width": 1890,
+        "height": 1075
       }
     }
   ]

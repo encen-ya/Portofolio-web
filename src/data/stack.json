@@ -1,72 +1,48 @@
 {
-  "title": "Primary stack",
-  "lead": "Every project is an excuse to go deeper on the stack. Here are the ones I work with most.",
-  "items": [
+  "title": "Tech Stack",
+  "lead": "Technologies and tools I use to build robust web, mobile, and database applications.",
+  "categories": [
     {
-      "name": "Flutter / Dart",
-      "tag": "Mobile",
-      "description": "Cross-platform mobile apps from a single codebase",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=730&h=913&q=60",
-        "alt": "A smartphone showing a mobile app",
-        "width": 730,
-        "height": 913
-      }
+      "name": "Bahasa Pemrograman",
+      "icon": "code",
+      "items": [
+        { "name": "Dart", "desc": "Mobile & multiplatform development" },
+        { "name": "JavaScript", "desc": "Interactive web & DOM logic" },
+        { "name": "PHP", "desc": "Backend services & server scripts" },
+        { "name": "HTML5 & CSS3", "desc": "Semantic markup & responsive layouts" },
+        { "name": "SQL", "desc": "Database modeling & query optimization" }
+      ]
     },
     {
-      "name": "HTML5 & CSS3",
-      "tag": "Front-end",
-      "description": "Semantic markup and responsive design",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=730&h=913&q=60",
-        "alt": "Web development code and responsive layouts",
-        "width": 730,
-        "height": 913
-      }
+      "name": "Framework & Library",
+      "icon": "layers",
+      "items": [
+        { "name": "Flutter", "desc": "Cross-platform mobile UI toolkit" },
+        { "name": "Laravel", "desc": "Modern PHP web application framework" },
+        { "name": "React", "desc": "Component-based user interface library" },
+        { "name": "Filament", "desc": "Admin panels & CRUD form builders" },
+        { "name": "Bootstrap", "desc": "Responsive web design system" }
+      ]
     },
     {
-      "name": "JavaScript",
-      "tag": "Front-end",
-      "description": "Interactivity and DOM manipulation",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=730&h=913&q=60",
-        "alt": "Code on a computer screen",
-        "width": 730,
-        "height": 913
-      }
+      "name": "Database",
+      "icon": "database",
+      "items": [
+        { "name": "MySQL", "desc": "Relational database management system" },
+        { "name": "PostgreSQL", "desc": "Advanced open-source relational database" }
+      ]
     },
     {
-      "name": "MySQL & SQL",
-      "tag": "Database",
-      "description": "Relational databases, queries, and data modelling",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=730&h=913&q=60",
-        "alt": "Database tables and schema diagram",
-        "width": 730,
-        "height": 913
-      }
-    },
-    {
-      "name": "Git & GitHub",
-      "tag": "DevOps",
-      "description": "Version control and open-source collaboration",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1618401479427-c8ef9465fbe1?auto=format&fit=crop&w=730&h=913&q=60",
-        "alt": "Git repository visualization",
-        "width": 730,
-        "height": 913
-      }
-    },
-    {
-      "name": "VS Code",
-      "tag": "Tools",
-      "description": "My daily driver for every line of code",
-      "image": {
-        "src": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=730&h=913&q=60",
-        "alt": "VS Code editor on a screen",
-        "width": 730,
-        "height": 913
-      }
+      "name": "DEV TOOLS & Environment",
+      "icon": "tool",
+      "items": [
+        { "name": "Git & GitHub", "desc": "Version control & open-source collaboration" },
+        { "name": "VS Code", "desc": "Primary code editor & workspace" },
+        { "name": "Android Studio", "desc": "Mobile app emulator & build tools" },
+        { "name": "Figma", "desc": "UI/UX design, prototyping & layout inspection" },
+        { "name": "Postman", "desc": "RESTful API testing & debugging" },
+        { "name": "Vite", "desc": "High-performance frontend build tooling" }
+      ]
     }
   ]
 }
