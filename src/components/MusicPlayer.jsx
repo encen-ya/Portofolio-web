@@ -2,16 +2,12 @@ import { useEffect, useRef, useState } from "react";
 
 const PLAYLIST = [
   {
+    title: "seasons — wave to earth",
+    src: "/audio/seasons.mp3",
+  },
+  {
     title: "Superpowers — Daniel Caesar",
     src: "/audio/superpowers.mp3",
-  },
-  {
-    title: "love. — wave to earth",
-    src: "/audio/bgm-2.mp3",
-  },
-  {
-    title: "Colourway — Novo Amor",
-    src: "/audio/bgm-3.mp3",
   },
 ];
 
@@ -177,6 +173,7 @@ export default function MusicPlayer() {
               className="music-ctrl-btn"
               onClick={prevTrack}
               aria-label="Previous track"
+              title="Previous song"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
@@ -187,6 +184,7 @@ export default function MusicPlayer() {
               className="music-play-btn"
               onClick={togglePlay}
               aria-label={isPlaying ? "Pause" : "Play"}
+              title={isPlaying ? "Pause" : "Play"}
             >
               {isPlaying ? (
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -203,6 +201,7 @@ export default function MusicPlayer() {
               className="music-ctrl-btn"
               onClick={nextTrack}
               aria-label="Next track"
+              title="Next song"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" />
