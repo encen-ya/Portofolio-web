@@ -1,4 +1,4 @@
-﻿@layer scenes {
+@layer scenes {
 @media (prefers-reduced-motion: no-preference) {
   [data-8b-live] #work { height: calc(100svh + var(--run, 0px)); }
   [data-8b-live] #work .work__stage { position: sticky; top: 0; height: 100svh; min-height: 560px; padding-top: clamp(84px, 13svh, 120px); padding-bottom: clamp(24px, 5svh, 48px); grid-template-rows: auto minmax(0, 1fr); overflow: clip; }

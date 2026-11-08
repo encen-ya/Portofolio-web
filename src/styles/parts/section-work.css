@@ -1,4 +1,4 @@
-﻿@layer sections {
+@layer sections {
 #work { position: relative; color: var(--color-2); }
 #work .work__plate { position: absolute; inset: 0 0 -2px; background: var(--color-1); }
 #work .work__stage { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; gap: clamp(28px, 4vh, 48px); padding: var(--space-2) var(--space-1); }

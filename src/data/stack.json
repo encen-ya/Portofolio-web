@@ -1,47 +1,43 @@
 {
-  "title": "Tech Stack",
-  "lead": "Technologies and tools I use to build robust web, mobile, and database applications.",
+  "title": "Primary stack",
+  "lead": "Technologies and tools I work with daily across mobile, web, backend, and database architecture.",
   "categories": [
     {
       "name": "Bahasa Pemrograman",
-      "icon": "code",
       "items": [
-        { "name": "Dart", "desc": "Mobile & multiplatform development" },
-        { "name": "JavaScript", "desc": "Interactive web & DOM logic" },
-        { "name": "PHP", "desc": "Backend services & server scripts" },
-        { "name": "HTML5 & CSS3", "desc": "Semantic markup & responsive layouts" },
-        { "name": "SQL", "desc": "Database modeling & query optimization" }
+        { "name": "Dart", "desc": "Mobile & multiplatform", "primary": true, "icon": "dart" },
+        { "name": "JavaScript", "desc": "Interactive web & DOM logic", "primary": true, "icon": "javascript" },
+        { "name": "PHP", "desc": "Backend services & API", "primary": false, "icon": "php" },
+        { "name": "HTML5 & CSS3", "desc": "Semantic layout & styling", "primary": false, "icon": "htmlcss" },
+        { "name": "SQL", "desc": "Relational data & queries", "primary": false, "icon": "sql" }
       ]
     },
     {
       "name": "Framework & Library",
-      "icon": "layers",
       "items": [
-        { "name": "Flutter", "desc": "Cross-platform mobile UI toolkit" },
-        { "name": "Laravel", "desc": "Modern PHP web application framework" },
-        { "name": "React", "desc": "Component-based user interface library" },
-        { "name": "Filament", "desc": "Admin panels & CRUD form builders" },
-        { "name": "Bootstrap", "desc": "Responsive web design system" }
+        { "name": "Flutter", "desc": "Cross-platform mobile UI", "primary": true, "icon": "flutter" },
+        { "name": "Laravel", "desc": "Full-stack PHP framework", "primary": true, "icon": "laravel" },
+        { "name": "React", "desc": "Component-based UI library", "primary": true, "icon": "react" },
+        { "name": "Filament", "desc": "Admin panels & CRUD forms", "primary": false, "icon": "filament" },
+        { "name": "Bootstrap", "desc": "Responsive web design", "primary": false, "icon": "bootstrap" }
       ]
     },
     {
       "name": "Database",
-      "icon": "database",
       "items": [
-        { "name": "MySQL", "desc": "Relational database management system" },
-        { "name": "PostgreSQL", "desc": "Advanced open-source relational database" }
+        { "name": "MySQL", "desc": "Relational database SQL", "primary": true, "icon": "mysql" },
+        { "name": "PostgreSQL", "desc": "Advanced open-source SQL", "primary": true, "icon": "postgresql" }
       ]
     },
     {
       "name": "DEV TOOLS & Environment",
-      "icon": "tool",
       "items": [
-        { "name": "Git & GitHub", "desc": "Version control & open-source collaboration" },
-        { "name": "VS Code", "desc": "Primary code editor & workspace" },
-        { "name": "Android Studio", "desc": "Mobile app emulator & build tools" },
-        { "name": "Figma", "desc": "UI/UX design, prototyping & layout inspection" },
-        { "name": "Postman", "desc": "RESTful API testing & debugging" },
-        { "name": "Vite", "desc": "High-performance frontend build tooling" }
+        { "name": "Git & GitHub", "desc": "Version control & collab", "primary": true, "icon": "github" },
+        { "name": "VS Code", "desc": "Primary code editor", "primary": true, "icon": "vscode" },
+        { "name": "Android Studio", "desc": "Emulator & mobile tools", "primary": false, "icon": "androidstudio" },
+        { "name": "Figma", "desc": "UI/UX design & prototypes", "primary": false, "icon": "figma" },
+        { "name": "Postman", "desc": "RESTful API testing", "primary": false, "icon": "postman" },
+        { "name": "Vite", "desc": "Modern frontend tooling", "primary": false, "icon": "vite" }
       ]
     }
   ]

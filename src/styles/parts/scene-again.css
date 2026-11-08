@@ -1,4 +1,4 @@
-﻿@layer scenes {
+@layer scenes {
   /* Simple, smooth presentation for stack cards */
   #again .stack__card {
     will-change: transform, border-color, box-shadow;
