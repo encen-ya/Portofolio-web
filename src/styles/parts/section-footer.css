@@ -1,0 +1,22 @@
+﻿@layer sections {
+#footer { position: relative; padding: clamp(80px, 12vh, 140px) var(--space-1) 28px; background: var(--color-1); color: var(--color-2); overflow: clip; }
+#footer .footer__bye { position: relative; white-space: nowrap; font-size: min(24vw, 40svh); }
+#footer .footer__word { display: inline-block; }
+#footer .footer__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 24px; margin-top: clamp(48px, 9vh, 96px); padding-top: 32px; border-top: 1px solid color-mix(in srgb, var(--color-2) 16%, transparent); }
+#footer .footer__col { display: grid; align-content: start; gap: 6px; }
+#footer .footer__label { margin-bottom: 8px; color: var(--color-5); }
+#footer .footer__news { grid-column: 1 / -1; display: grid; gap: 14px; }
+#footer .footer__field { display: flex; align-items: center; gap: 12px; }
+#footer .footer__field .m-field { flex: 1; }
+#footer .footer__note { color: var(--color-5); }
+#footer .footer__legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; margin-top: 56px; color: var(--color-5); }
+#footer .footer__made { display: inline-flex; align-items: center; gap: .45em; }
+#footer .footer__heart { width: 1.55em; height: 1.55em; flex: none; color: var(--color-2); filter: drop-shadow(0 0 5px color-mix(in srgb, var(--color-2) 34%, transparent)); }
+#footer .footer-ridges { position: relative; height: clamp(300px, 44vh, 540px); margin: clamp(6px, 1.2vh, 12px) calc(var(--space-1) * -1) calc(28px * -1); overflow: hidden; }
+#footer .footer-ridges__canvas { position: absolute; left: 0; bottom: 0; display: block; max-width: none; image-rendering: pixelated; image-rendering: crisp-edges; }
+@media (min-width: 900px) {
+  #footer .footer__bye { font-size: min(24.5vw, 52svh); }
+  #footer .footer__grid { grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, 2fr); }
+  #footer .footer__news { grid-column: auto; }
+}
+}

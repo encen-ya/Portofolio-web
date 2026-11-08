@@ -1,0 +1,63 @@
+{
+  "title": "Blog & Notes",
+  "images": [
+    {
+      "src": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=570&h=713&q=60",
+      "alt": "A smartphone showing a mobile app",
+      "width": 570,
+      "height": 713
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=570&h=713&q=60",
+      "alt": "A laptop showing a website",
+      "width": 570,
+      "height": 713
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=570&h=713&q=60",
+      "alt": "Code on a computer screen",
+      "width": 570,
+      "height": 713
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=570&h=713&q=60",
+      "alt": "A developer coding on a laptop",
+      "width": 570,
+      "height": 713
+    }
+  ],
+  "stories": [
+    {
+      "category": "Event",
+      "date": "2026-11-01",
+      "dateLabel": "1 November 2026",
+      "readTime": "2 min read",
+      "title": "Open source contributions: my first pull request",
+      "excerpt": "What I learned from submitting my first PR — the nerves, the feedback, and why I'll keep doing it."
+    },
+    {
+      "category": "Notes",
+      "date": "2026-10-15",
+      "dateLabel": "15 October 2026",
+      "readTime": "4 min read",
+      "title": "Flutter vs React Native: a beginner's honest take",
+      "excerpt": "I've used both for small projects. Here's what I actually found, without the marketing."
+    },
+    {
+      "category": "Essay",
+      "date": "2026-10-02",
+      "dateLabel": "2 October 2026",
+      "readTime": "6 min read",
+      "title": "Why I chose to study IT at Politeknik Negeri Malang",
+      "excerpt": "Vocation over theory. I wanted to build things on day one, and that's exactly what happened."
+    },
+    {
+      "category": "Research",
+      "date": "2026-09-10",
+      "dateLabel": "10 September 2026",
+      "readTime": "3 min read",
+      "title": "CSS scroll animations: how the template I forked works",
+      "excerpt": "I dug into CSS scroll-driven animations to understand this portfolio's motion. Here's what I found."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Selected projects",
+  "lead": "Three projects from my learning journey. Each one taught me something new.",
+  "items": [
+    {
+      "name": "Company Profile LAB InLET",
+      "tag": "Web, PHP, PostgreSQL",
+      "description": "A company profile website for the InLET laboratory at Politeknik Negeri Malang, powered by PHP and PostgreSQL.",
+      "image": {
+        "src": "/images/project-inlet-lab.jpg",
+        "alt": "Homepage of the InLET laboratory company profile website",
+        "width": 1600,
+        "height": 1001
+      }
+    },
+    {
+      "name": "Harapan Jaya Printing",
+      "tag": "Web App, Laravel, Filament",
+      "description": "A Laravel storefront for a digital printing business, with a product catalog, order tracking, and a Filament admin panel.",
+      "image": {
+        "src": "/images/project-harapan-jaya.jpg",
+        "alt": "Homepage of the Harapan Jaya digital printing storefront",
+        "width": 1600,
+        "height": 1001
+      }
+    },
+    {
+      "name": "kreszen.my.id",
+      "tag": "Portfolio, Web",
+      "description": "My personal portfolio site, built to document my projects, GitHub repos, and dev journey.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1140&h=713&q=60",
+        "alt": "A developer writing code on a laptop",
+        "width": 1140,
+        "height": 713
+      }
+    }
+  ]
+}

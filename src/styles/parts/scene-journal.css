@@ -1,0 +1,22 @@
+﻿@layer scenes {
+@media (prefers-reduced-motion: no-preference) {
+  [data-8b-live] #journal .journal__frame { position: sticky; z-index: 1; top: 80px; }
+  [data-8b-live] #journal .journal__shot:first-child { z-index: auto; }
+  @media (min-width: 900px) { [data-8b-live] #journal .journal__frame { top: calc(50svh - min(30svh, 22vw)); max-height: 60svh; } }
+}
+}
+@layer scenes {
+[data-8b-live] #journal { timeline-scope: --journal-t2, --journal-t3, --journal-t4; }
+[data-8b-live] #journal .journal__list > .story { view-timeline-inset: 0; animation-name: journal-li-story-opacity; animation-timeline: --journal-item; animation-range: cover 16vh cover 43.2vh; animation-timing-function: linear; animation-fill-mode: both; }
+[data-8b-live] #journal .journal__list > li:first-of-type { animation-range: cover 16vh cover 50vh; }
+[data-8b-live] #journal .journal__list > li:nth-of-type(1) { view-timeline: --journal-item block; }
+[data-8b-live] #journal .journal__list > li:nth-of-type(2) { view-timeline: --journal-item block, --journal-t2 block; }
+[data-8b-live] #journal .journal__list > li:nth-of-type(3) { view-timeline: --journal-item block, --journal-t3 block; }
+[data-8b-live] #journal .journal__list > li:nth-of-type(4) { view-timeline: --journal-item block, --journal-t4 block; }
+[data-8b-live] #journal .journal__frame > img:is(:nth-of-type(2), :nth-of-type(3), :nth-of-type(4)) { animation-name: journal-img-journal-shot-clippath; animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); }
+[data-8b-live] #journal .journal__frame > img:nth-of-type(2) { animation-timeline: --journal-t2; animation-range: cover 16vh cover 50vh; animation-fill-mode: both; }
+[data-8b-live] #journal .journal__frame > img:nth-of-type(3) { animation-timeline: --journal-t3; animation-range: cover 16vh cover 50vh; animation-fill-mode: both; }
+[data-8b-live] #journal .journal__frame > img:nth-of-type(4) { animation-timeline: --journal-t4; animation-range: cover 16vh cover 50vh; animation-fill-mode: both; }
+@keyframes journal-li-story-opacity { 0% { opacity: 0.25; } 100% { opacity: 1; } }
+@keyframes journal-img-journal-shot-clippath { 0% { clip-path: circle(0% at 50% 50%); } 100% { clip-path: circle(75% at 50% 50%); } }
+}

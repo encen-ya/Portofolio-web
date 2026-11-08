@@ -1,0 +1,36 @@
+{
+  "word": "HUBUNGI",
+  "columns": {
+    "explore": "Explore",
+    "talk": "Talk",
+    "follow": "Follow"
+  },
+  "explore": [
+    { "label": "About", "href": "#about" },
+    { "label": "Projects", "href": "#work" },
+    { "label": "Stack", "href": "#again" },
+    { "label": "Skills", "href": "#capabilities" },
+    { "label": "Blog", "href": "#journal" }
+  ],
+  "talk": [
+    { "label": "echenwijono@gmail.com", "href": "mailto:echenwijono@gmail.com" },
+    { "label": "github.com/encen-ya", "href": "https://github.com/encen-ya" }
+  ],
+  "follow": [
+    { "label": "GitHub", "href": "https://github.com/encen-ya" },
+    { "label": "LinkedIn", "href": "https://linkedin.com/in/kreszen-vallentino-arjuna-wijono-a961b8449" }
+  ],
+  "newsletter": {
+    "label": "Dev notes in your inbox, once a month",
+    "placeholder": "Your email",
+    "submitLabel": "Subscribe",
+    "idle": "No spam, one email a month, unsubscribe in one click.",
+    "success": "You are in. See you next month.",
+    "error": "Please enter a valid email address."
+  },
+  "legal": {
+    "copyright": "© 2026 Kreszen Vallentino · Design: ",
+    "credit": { "label": "8B", "url": "https://8b.com/" },
+    "location": "Made with love"
+  }
+}
