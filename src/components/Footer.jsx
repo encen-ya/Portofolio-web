@@ -1,19 +1,7 @@
-import { useState } from "react";
 import footer from "../data/footer.json";
 import FooterRidges from "./FooterRidges";
-import { ArrowIcon } from "./Icons";
 
 export default function Footer() {
-  const [status, setStatus] = useState(footer.newsletter.idle);
-
-  const onSubscribe = (event) => {
-    event.preventDefault();
-    const form = event.currentTarget;
-    const valid = form.checkValidity();
-    setStatus(valid ? footer.newsletter.success : footer.newsletter.error);
-    if (valid) form.reset();
-  };
-
   return (
     <footer id="footer" data-8b-section="footer">
       <p
@@ -23,86 +11,63 @@ export default function Footer() {
         <span className="footer__word">{footer.word}</span>
       </p>
       <div className="footer__grid">
-        <nav className="footer__col" aria-label="Footer">
-          <p className="m-text-6 footer__label">{footer.columns.explore}</p>
-          {footer.explore.map((link) => (
-            <a className="m-link-2" href={link.href} key={link.href}>
-              {link.label}
-            </a>
-          ))}
-        </nav>
-        <div className="footer__col">
-          <p className="m-text-6 footer__label">{footer.columns.talk}</p>
-          {footer.talk.map((link) => (
+        <div className="footer__copy m-text-6">
+          <p>
+            {footer.legal.copyright}
             <a
-              className="m-link-2"
-              href={link.href}
-              key={link.href}
-              {...(link.href.startsWith("http")
-                ? { target: "_blank", rel: "noopener" }
-                : {})}
+              href={footer.legal.credit.url}
+              style={{ color: "inherit" }}
+              data-8b-credit
             >
-              {link.label}
+              {footer.legal.credit.label}
             </a>
-          ))}
-        </div>
-        <div className="footer__col">
-          <p className="m-text-6 footer__label">{footer.columns.follow}</p>
-          {footer.follow.map((link) => (
-            <a
-              className="m-link-2"
-              href={link.href}
-              key={link.href}
-              target="_blank"
-              rel="noopener"
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
-        <form className="footer__news" noValidate onSubmit={onSubscribe}>
-          <label className="m-text-7" htmlFor="news-email">
-            {footer.newsletter.label}
-            <span className="m-dot" aria-hidden="true" />
-          </label>
-          <div className="footer__field">
-            <input
-              className="m-field"
-              id="news-email"
-              name="email"
-              type="email"
-              autoComplete="email"
-              placeholder={footer.newsletter.placeholder}
-              required
-            />
-            <button
-              className="m-icon"
-              type="submit"
-              aria-label={footer.newsletter.submitLabel}
-            >
-              <ArrowIcon />
-            </button>
-          </div>
-          <p className="m-text-6 footer__note" role="status" aria-live="polite">
-            {status}
           </p>
-        </form>
-      </div>
-      <div className="footer__legal m-text-6">
-        <p>
-          {footer.legal.copyright}
-          <a
-            href={footer.legal.credit.url}
-            style={{ color: "inherit" }}
-            data-8b-credit
-          >
-            {footer.legal.credit.label}
-          </a>
-        </p>
-        <p className="footer__made">
-          {footer.legal.location}
-          <HeartDots />
-        </p>
+        </div>
+        <div className="footer__cols">
+          <nav className="footer__col" aria-label="Footer">
+            <p className="m-text-6 footer__label">{footer.columns.explore}</p>
+            {footer.explore.map((link) => (
+              <a className="m-link-2" href={link.href} key={link.href}>
+                {link.label}
+              </a>
+            ))}
+          </nav>
+          <div className="footer__col">
+            <p className="m-text-6 footer__label">{footer.columns.talk}</p>
+            {footer.talk.map((link) => (
+              <a
+                className="m-link-2"
+                href={link.href}
+                key={link.href}
+                {...(link.href.startsWith("http")
+                  ? { target: "_blank", rel: "noopener" }
+                  : {})}
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+          <div className="footer__col">
+            <p className="m-text-6 footer__label">{footer.columns.follow}</p>
+            {footer.follow.map((link) => (
+              <a
+                className="m-link-2"
+                href={link.href}
+                key={link.href}
+                target="_blank"
+                rel="noopener"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+        <div className="footer__made-wrap m-text-6">
+          <p className="footer__made">
+            {footer.legal.location}
+            <HeartDots />
+          </p>
+        </div>
       </div>
       <FooterRidges seed={23} ridges={7} />
     </footer>
